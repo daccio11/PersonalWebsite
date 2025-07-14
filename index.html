@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjamin Daccione - Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header & Navigation -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-white">Benjamin Daccione</a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="resume.html" class="nav-link">Resume</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <span class="sr-only">Open main menu</span>
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">About</a>
+                <a href="blog.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Blog</a>
+                <a href="projects.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Projects</a>
+                <a href="resume.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Resume</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- About / Hero Section -->
+        <section id="about" class="text-center py-20">
+            <img class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-gray-700 shadow-lg" src="/Images/Nowater_7 (2).jpg" alt="Your Profile Picture">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Hi, I'm Benjamin Daccione</h1>
+            <p class="text-xl md:text-2xl text-blue-400 mb-8">A passionate Cyber Forensics & Security student at Marshall University, dedicated to protecting digital environments and investigating complex security challenges.
+
+            </p>
+            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Get In Touch</a>
+        </section>
+
+        <!-- Blog Section Preview -->
+        <section id="blog-preview" class="py-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">My Latest Thoughts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden card-hover">
+                    <img class="w-full h-48 object-cover" src="https://placehold.co/600x400/3d4852/ffffff?text=Blog+Image" alt="Blog Post Image">
+                    <div class="p-6">
+                        <span class="text-sm text-gray-400">July 13, 2025</span>
+                        <h3 class="text-xl font-bold text-white mt-2 mb-3">Building a Personal Website with Tailwind CSS</h3>
+                        <p class="text-gray-400 mb-4">A walkthrough of the process, challenges, and joys of creating a personal site from scratch...</p>
+                        <a href="blog.html#post1" class="text-blue-400 hover:text-blue-500 font-semibold">Read More &rarr;</a>
+                    </div>
+                </div>
+                <!-- Blog Post 2 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden card-hover">
+                    <img class="w-full h-48 object-cover" src="https://placehold.co/600x400/3d4852/ffffff?text=Blog+Image" alt="Blog Post Image">
+                    <div class="p-6">
+                        <span class="text-sm text-gray-400">June 28, 2025</span>
+                        <h3 class="text-xl font-bold text-white mt-2 mb-3">The Power of Responsive Design</h3>
+                        <p class="text-gray-400 mb-4">Why adapting to different screen sizes is no longer an option, but a necessity...</p>
+                        <a href="blog.html#post2" class="text-blue-400 hover:text-blue-500 font-semibold">Read More &rarr;</a>
+                    </div>
+                </div>
+                <!-- Blog Post 3 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden card-hover">
+                    <img class="w-full h-48 object-cover" src="https://placehold.co/600x400/3d4852/ffffff?text=Blog+Image" alt="Blog Post Image">
+                    <div class="p-6">
+                        <span class="text-sm text-gray-400">June 15, 2025</span>
+                        <h3 class="text-xl font-bold text-white mt-2 mb-3">Getting Started with React Hooks</h3>
+                        <p class="text-gray-400 mb-4">A beginner-friendly introduction to useState and useEffect, and how they simplify state...</p>
+                        <a href="blog.html#post3" class="text-blue-400 hover:text-blue-500 font-semibold">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="blog.html" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">View All Posts</a>
+            </div>
+        </section>
+
+        <!-- Projects Section Preview -->
+        <section id="projects-preview" class="py-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Things I've Built</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden card-hover">
+                    <img class="w-full h-56 object-cover" src="https://placehold.co/600x400/3d4852/ffffff?text=Project+1" alt="Project 1 Screenshot">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Project Title One</h3>
+                        <p class="text-gray-400 mb-4">A brief, compelling description of your project. Highlight the problem it solves and the technologies used.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-blue-400 hover:text-blue-500 font-semibold">Live Demo</a>
+                            <a href="projects.html#project1" class="text-blue-400 hover:text-blue-500 font-semibold">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden card-hover">
+                    <img class="w-full h-56 object-cover" src="https://placehold.co/600x400/3d4852/ffffff?text=Project+2" alt="Project 2 Screenshot">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Project Title Two</h3>
+                        <p class="text-gray-400 mb-4">Another great project. Explain its purpose and your role in its development. Mention key features.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-blue-400 hover:text-blue-500 font-semibold">Live Demo</a>
+                             <a href="projects.html#project2" class="text-blue-400 hover:text-blue-500 font-semibold">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="text-center mt-12">
+                <a href="projects.html" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">View All Projects</a>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-800 rounded-lg mt-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-4">Let's Connect</h2>
+            <p class="text-center text-gray-400 mb-12">Feel free to reach out via email or connect with me on social media.</p>
+            <div class="text-center">
+                <a href="mailto:bdaccione@gmail.com" class="text-2xl text-blue-400 hover:text-blue-500 font-semibold">bdaccione@gmail.com</a>
+                <div class="flex justify-center items-center space-x-6 mt-8">
+                    <!-- GitHub Link -->
+                    <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <span class="sr-only">GitHub</span>
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg>
+                    </a>
+                    <!-- LinkedIn Link -->
+                    <a href="https://www.linkedin.com/in/bendaccione/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <span class="sr-only">LinkedIn</span>
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 mt-12">
+        <div class="container mx-auto px-6 py-4 text-center text-gray-400">
+            <p>&copy; 2025 Benjamin Daccione. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // For mobile, we can just close the menu. The browser will handle the scroll.
+                if(!link.href.includes('#')){
+                    return;
+                }
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
