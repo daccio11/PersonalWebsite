@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Benjamin Daccione</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a0e17'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-size='18' font-family='monospace' font-weight='bold' fill='%2300d4ff'>BD</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <style>
+    .error-page {
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .error-code {
+      font-family: var(--font-mono);
+      font-size: clamp(5rem, 15vw, 9rem);
+      font-weight: 700;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--color-accent), var(--color-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1rem;
+    }
+    .error-msg {
+      font-family: var(--font-mono);
+      color: var(--color-muted);
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+    .error-sub {
+      color: var(--color-muted);
+      font-size: 0.85rem;
+      margin-bottom: 2.5rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="error-page">
+    <p class="error-code">404</p>
+    <p class="error-msg">$ page not found</p>
+    <p class="error-sub">This page doesn't exist — or was moved.</p>
+    <a href="/" class="btn btn--primary">Back to Home</a>
+  </main>
+</body>
+</html>

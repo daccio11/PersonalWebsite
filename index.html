@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO / Open Graph -->
+  <title>Benjamin Daccione — Cybersecurity Analyst | Blue Team | SOC & Incident Response</title>
+  <meta name="description" content="Benjamin Daccione is a cybersecurity analyst and Marshall University student specializing in Blue Team, SOC operations, and Incident Response. Graduating December 2026." />
+  <meta property="og:title" content="Benjamin Daccione — Cybersecurity Portfolio" />
+  <meta property="og:description" content="Threat hunter in training. 4.0 GPA. Real-world SOC experience." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bendaccione.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Benjamin Daccione — Cybersecurity Portfolio" />
+  <meta name="twitter:description" content="Threat hunter in training. 4.0 GPA. Real-world SOC experience." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a0e17'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-size='18' font-family='monospace' font-weight='bold' fill='%2300d4ff'>BD</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a href="#hero" class="nav__logo" aria-label="Benjamin Daccione — home">
+        <span class="nav__logo-bracket">[</span>BD<span class="nav__logo-bracket">]</span>
+      </a>
+
+      <!-- Hamburger (mobile) -->
+      <button class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <ul class="nav__links" id="nav-links" role="list">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#certifications" class="nav__link">Certs</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="blog/index.html" class="nav__link">Blog</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <!-- Animated network nodes background -->
+      <canvas class="hero__canvas" id="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero__content container">
+        <p class="hero__eyebrow" aria-hidden="true">$ whoami</p>
+        <h1 class="hero__name">Benjamin Daccione</h1>
+        <p class="hero__title">Cybersecurity Analyst &nbsp;|&nbsp; Blue Team &nbsp;|&nbsp; SOC &amp; Incident Response</p>
+        <p class="hero__tagline">
+          <span class="hero__tagline-static">// </span><span id="typed-tagline" aria-label="Threat hunter in training. 4.0 GPA. Real-world SOC experience."></span><span class="hero__cursor" aria-hidden="true">█</span>
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <!-- TODO: Ben - replace href with your actual resume PDF path -->
+          <a href="assets/resume.pdf" class="btn btn--outline" download aria-label="Download Benjamin Daccione's resume">Download Resume</a>
+        </div>
+        <div class="hero__status">
+          <span class="status-dot status-dot--green" aria-hidden="true"></span>
+          <span>Open to internship &amp; entry-level roles &mdash; Graduating December 2026</span>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll-hint" aria-label="Scroll to About section">
+        <span>scroll</span>
+        <svg width="16" height="24" viewBox="0 0 16 24" fill="none" aria-hidden="true">
+          <rect x="1" y="1" width="14" height="22" rx="7" stroke="currentColor" stroke-width="1.5"/>
+          <circle class="hero__scroll-dot" cx="8" cy="7" r="2.5" fill="currentColor"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">01 &mdash; about</span>
+          <h2 class="section__title" id="about-heading">Who I Am</h2>
+        </div>
+
+        <div class="about__grid">
+          <!-- Avatar -->
+          <div class="about__avatar-wrap">
+            <!-- TODO: Ben - replace this div with <img src="assets/images/avatar.png" alt="Benjamin Daccione" class="about__avatar-img" /> when you have a photo -->
+            <div class="about__avatar-initials" aria-label="Avatar for Benjamin Daccione">
+              <span>BD</span>
+            </div>
+            <div class="about__avatar-ring" aria-hidden="true"></div>
+          </div>
+
+          <!-- Bio -->
+          <div class="about__bio">
+            <p class="about__intro">
+              I've spent the last year monitoring real threats in a live SOC environment, studying how attackers think, and building the tools to stop them. I graduate in December 2026 — and I'm ready.
+            </p>
+            <p>
+              I'm a Cyber Forensics &amp; Security student at Marshall University carrying a 4.0 GPA across five semesters on the President's List. Last summer I interned at Wesbanco Bank's information security team, where I worked hands-on with SIEM platforms, EDR tools, and NIST SP 800-53 compliance reviews. I also helped run a phishing simulation campaign and built SOPs from real incident response workflows.
+            </p>
+            <p>
+              I hold the <strong>ISC2 Certified in Cybersecurity (CC)</strong> credential and I'm actively pursuing Security+ and Network+. My focus is Blue Team operations — log analysis, threat detection, and incident response — with the goal of joining a SOC or IR team where I can keep learning fast and contribute immediately.
+            </p>
+
+            <div class="about__currently">
+              <h3 class="about__currently-title"><span class="accent">&gt;</span> Currently</h3>
+              <ul class="about__currently-list" role="list">
+                <li>Studying for CompTIA Security+ &amp; Network+</li>
+                <li>Active member of Marshall Defense Club &amp; CompTIA Sec+ Prep Club</li>
+                <li>Building out home lab projects for hands-on threat analysis</li>
+                <li>Open to Summer 2026 internships and December 2026 full-time roles</li>
+              </ul>
+            </div>
+
+            <div class="about__meta">
+              <div class="about__meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Wheeling, WV &mdash; Marshall University, Huntington, WV
+              </div>
+              <div class="about__meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                BS Cyber Forensics &amp; Security &mdash; Minor in Criminal Justice
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section experience" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">02 &mdash; experience</span>
+          <h2 class="section__title" id="experience-heading">Where I've Worked</h2>
+        </div>
+
+        <div class="timeline">
+
+          <!-- Wesbanco -->
+          <article class="timeline__item fade-in" aria-labelledby="job-wesbanco">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__card-header">
+                <div>
+                  <h3 class="timeline__role" id="job-wesbanco">Information Security Intern</h3>
+                  <p class="timeline__company">Wesbanco Bank &mdash; Wheeling, WV</p>
+                </div>
+                <time class="timeline__date" datetime="2025-06/2025-08">June &ndash; August 2025</time>
+              </div>
+              <ul class="timeline__bullets" role="list">
+                <li>Monitored real-time security alerts across SIEM, firewall, and EDR platforms in a live production environment</li>
+                <li>Analyzed threat patterns and documented investigative workflows as structured SOPs</li>
+                <li>Facilitated simulated phishing campaigns and delivered data-driven executive summary reports</li>
+                <li>Cross-referenced internal security policies against NIST SP 800-53 control frameworks</li>
+              </ul>
+              <div class="timeline__tags" aria-label="Skills used">
+                <span class="tag">SIEM</span>
+                <span class="tag">EDR</span>
+                <span class="tag">NIST SP 800-53</span>
+                <span class="tag">Phishing Simulation</span>
+                <span class="tag">Incident Response</span>
+                <span class="tag">Log Analysis</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Foundever QB -->
+          <article class="timeline__item fade-in" aria-labelledby="job-qb">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__card-header">
+                <div>
+                  <h3 class="timeline__role" id="job-qb">QuickBooks Product Expert</h3>
+                  <p class="timeline__company">Foundever &mdash; Remote</p>
+                </div>
+                <time class="timeline__date" datetime="2025-09">September 2025 &ndash; Present</time>
+              </div>
+              <ul class="timeline__bullets" role="list">
+                <li>Performed secure identity verification and authentication for QuickBooks users at scale</li>
+                <li>Served as a first-line defense against social engineering and unauthorized access attempts</li>
+                <li>Managed PII across multi-system environments with 100% compliance with internal security standards</li>
+                <li>Maintained 90%+ TNPS customer satisfaction metrics</li>
+              </ul>
+              <div class="timeline__tags" aria-label="Skills used">
+                <span class="tag">Identity Verification</span>
+                <span class="tag">Social Engineering Defense</span>
+                <span class="tag">PII Management</span>
+                <span class="tag">Security Compliance</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Foundever TurboTax -->
+          <article class="timeline__item fade-in" aria-labelledby="job-tt">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__card-header">
+                <div>
+                  <h3 class="timeline__role" id="job-tt">TurboTax Product Expert</h3>
+                  <p class="timeline__company">Foundever &mdash; Remote</p>
+                </div>
+                <time class="timeline__date" datetime="2025-02/2025-05">February &ndash; May 2025</time>
+              </div>
+              <ul class="timeline__bullets" role="list">
+                <li>Ranked top 2 in customer satisfaction (81%) — earned the Survey Statement Award</li>
+                <li>Represented Marshall University in executive-level pilot meetings with Intuit leadership</li>
+              </ul>
+              <div class="timeline__tags" aria-label="Skills used">
+                <span class="tag">Customer Trust</span>
+                <span class="tag">Data Privacy</span>
+                <span class="tag">Communication</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CERTIFICATIONS ===================== -->
+    <section class="section certs" id="certifications" aria-labelledby="certs-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">03 &mdash; certifications</span>
+          <h2 class="section__title" id="certs-heading">Credentials</h2>
+        </div>
+
+        <div class="certs__grid">
+
+          <!-- ISC2 CC — EARNED -->
+          <article class="cert-card cert-card--earned fade-in" aria-labelledby="cert-cc">
+            <div class="cert-card__badge cert-card__badge--earned" aria-label="Certification earned">EARNED</div>
+            <div class="cert-card__icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="var(--color-success)" stroke-width="2"/><path d="M12 20l6 6 10-12" stroke="var(--color-success)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="cert-card__name" id="cert-cc">Certified in Cybersecurity (CC)</h3>
+            <p class="cert-card__issuer">ISC2</p>
+            <p class="cert-card__year">2026</p>
+            <p class="cert-card__desc">Validates foundational knowledge across security principles, network security, incident response, and access controls.</p>
+          </article>
+
+          <!-- Security+ — IN PROGRESS -->
+          <article class="cert-card cert-card--progress fade-in" aria-labelledby="cert-secplus">
+            <div class="cert-card__badge cert-card__badge--progress" aria-label="In progress">IN PROGRESS</div>
+            <div class="cert-card__icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="var(--color-accent)" stroke-width="2"/><path d="M20 12v8l5 3" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="cert-card__name" id="cert-secplus">CompTIA Security+</h3>
+            <p class="cert-card__issuer">CompTIA</p>
+            <div class="cert-card__progress-wrap">
+              <div class="cert-card__progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Study progress: 65%">
+                <div class="cert-card__progress-fill" style="width: 65%"></div>
+              </div>
+              <span class="cert-card__progress-label">Studying &mdash; targeting 2026</span>
+            </div>
+            <p class="cert-card__desc">Industry-standard baseline security certification covering threats, cryptography, and identity management.</p>
+          </article>
+
+          <!-- Network+ — IN PROGRESS -->
+          <article class="cert-card cert-card--progress fade-in" aria-labelledby="cert-netplus">
+            <div class="cert-card__badge cert-card__badge--progress" aria-label="In progress">IN PROGRESS</div>
+            <div class="cert-card__icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="var(--color-accent)" stroke-width="2"/><circle cx="20" cy="12" r="3" fill="var(--color-accent)"/><circle cx="12" cy="26" r="3" fill="var(--color-accent)"/><circle cx="28" cy="26" r="3" fill="var(--color-accent)"/><path d="M20 15v5M16.5 24l3.5-4 3.5 4" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="cert-card__name" id="cert-netplus">CompTIA Network+</h3>
+            <p class="cert-card__issuer">CompTIA</p>
+            <div class="cert-card__progress-wrap">
+              <div class="cert-card__progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" aria-label="Study progress: 40%">
+                <div class="cert-card__progress-fill" style="width: 40%"></div>
+              </div>
+              <span class="cert-card__progress-label">Studying &mdash; targeting 2026</span>
+            </div>
+            <p class="cert-card__desc">Covers network infrastructure, operations, security, and troubleshooting across vendor-neutral environments.</p>
+          </article>
+
+          <!-- What's Next -->
+          <article class="cert-card cert-card--next fade-in" aria-labelledby="cert-next">
+            <div class="cert-card__badge cert-card__badge--next" aria-label="Planned">WHAT'S NEXT</div>
+            <div class="cert-card__icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="var(--color-purple)" stroke-width="2" stroke-dasharray="4 3"/><text x="20" y="25" text-anchor="middle" font-size="18" fill="var(--color-purple)" font-family="monospace">?</text></svg>
+            </div>
+            <h3 class="cert-card__name" id="cert-next">On the Horizon</h3>
+            <p class="cert-card__issuer">Post-graduation targets</p>
+            <ul class="cert-card__next-list" role="list">
+              <li>CySA+ — CompTIA Cybersecurity Analyst</li>
+              <li>Blue Team Level 1 (BTL1) — Security Blue Team</li>
+              <li>GCFE — GIAC Certified Forensic Examiner</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section projects" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">04 &mdash; projects &amp; labs</span>
+          <h2 class="section__title" id="projects-heading">Work I've Built</h2>
+        </div>
+
+        <!-- Category filter -->
+        <div class="projects__filters" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn filter-btn--active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="home-lab">Home Lab</button>
+          <button class="filter-btn" data-filter="ctf">CTF</button>
+          <button class="filter-btn" data-filter="network">Network Analysis</button>
+          <button class="filter-btn" data-filter="forensics">Forensics</button>
+        </div>
+
+        <div class="projects__grid" id="projects-grid">
+
+          <!-- TODO: Ben - replace these placeholder cards with your real projects -->
+
+          <article class="project-card fade-in" data-category="home-lab" aria-labelledby="proj-1">
+            <div class="project-card__category">Home Lab</div>
+            <h3 class="project-card__title" id="proj-1">SIEM Home Lab &mdash; ELK Stack</h3>
+            <p class="project-card__desc">
+              <!-- TODO: Ben - replace with your real project description -->
+              Deployed a local Elasticsearch, Logstash, and Kibana stack to ingest Windows Event Logs and practice alert triage. Simulated brute-force and privilege escalation scenarios.
+            </p>
+            <div class="project-card__tools" aria-label="Tools used">
+              <span class="tag tag--sm">ELK Stack</span>
+              <span class="tag tag--sm">Windows Logs</span>
+              <span class="tag tag--sm">Python</span>
+              <span class="tag tag--sm">Kibana</span>
+            </div>
+            <div class="project-card__links">
+              <!-- TODO: Ben - replace # with your real GitHub repo URL -->
+              <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View SIEM Home Lab on GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <!-- TODO: Ben - replace # with your real writeup URL (blog post, Notion, etc.) -->
+              <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="Read SIEM Home Lab writeup">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Writeup
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" data-category="ctf" aria-labelledby="proj-2">
+            <div class="project-card__category">CTF</div>
+            <h3 class="project-card__title" id="proj-2">TryHackMe &mdash; SOC Level 1 Path</h3>
+            <p class="project-card__desc">
+              <!-- TODO: Ben - replace with your real project description -->
+              Completed the SOC Level 1 learning path on TryHackMe, covering network traffic analysis, SIEM operations, endpoint security, and incident response fundamentals.
+            </p>
+            <div class="project-card__tools" aria-label="Tools used">
+              <span class="tag tag--sm">Wireshark</span>
+              <span class="tag tag--sm">Splunk</span>
+              <span class="tag tag--sm">SIEM</span>
+              <span class="tag tag--sm">TryHackMe</span>
+            </div>
+            <div class="project-card__links">
+              <!-- TODO: Ben - replace # with your real TryHackMe profile or writeup URL -->
+              <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View TryHackMe profile">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Profile
+              </a>
+              <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="Read writeup">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Writeup
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card fade-in" data-category="network" aria-labelledby="proj-3">
+            <div class="project-card__category">Network Analysis</div>
+            <h3 class="project-card__title" id="proj-3">Packet Capture Analysis &mdash; Wireshark</h3>
+            <p class="project-card__desc">
+              <!-- TODO: Ben - replace with your real project description -->
+              Analyzed PCAP files from public CTF challenges and Marshall University coursework to identify C2 traffic, DNS tunneling, and credential theft patterns.
+            </p>
+            <div class="project-card__tools" aria-label="Tools used">
+              <span class="tag tag--sm">Wireshark</span>
+              <span class="tag tag--sm">NGREP</span>
+              <span class="tag tag--sm">TCPDump</span>
+              <span class="tag tag--sm">Python</span>
+            </div>
+            <div class="project-card__links">
+              <!-- TODO: Ben - replace # with your real GitHub repo or writeup URL -->
+              <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer" aria-label="Read writeup">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Writeup
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="projects__note">
+          <!-- TODO: Ben - remove this note once you've added real projects -->
+          <span class="accent">// </span>More projects coming soon. Adding new labs regularly.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section skills" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">05 &mdash; skills</span>
+          <h2 class="section__title" id="skills-heading">Technical Stack</h2>
+        </div>
+
+        <div class="skills__grid">
+
+          <div class="skill-group fade-in">
+            <h3 class="skill-group__title">
+              <span class="skill-group__icon" aria-hidden="true">⬡</span>
+              SIEM &amp; Monitoring
+            </h3>
+            <ul class="skill-group__list" role="list">
+              <li class="skill-item">
+                <span class="skill-item__name">SIEM Log Analysis</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="SIEM Log Analysis proficiency: 85%">
+                  <div class="skill-item__fill" style="--fill: 85%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item__name">Cyber Threat Intelligence</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Cyber Threat Intelligence proficiency: 75%">
+                  <div class="skill-item__fill" style="--fill: 75%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item__name">EDR Platforms</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="EDR Platforms proficiency: 70%">
+                  <div class="skill-item__fill" style="--fill: 70%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item__name">Incident Response</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Incident Response proficiency: 80%">
+                  <div class="skill-item__fill" style="--fill: 80%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-group fade-in">
+            <h3 class="skill-group__title">
+              <span class="skill-group__icon" aria-hidden="true">⬡</span>
+              Forensics &amp; Network Tools
+            </h3>
+            <ul class="skill-group__list" role="list">
+              <li class="skill-item">
+                <span class="skill-item__name">Wireshark</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Wireshark proficiency: 80%">
+                  <div class="skill-item__fill" style="--fill: 80%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item__name">Kali Linux</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Kali Linux proficiency: 75%">
+                  <div class="skill-item__fill" style="--fill: 75%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item__name">NGREP / TCPDump</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="NGREP proficiency: 70%">
+                  <div class="skill-item__fill" style="--fill: 70%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item__name">Cyber Forensics</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Cyber Forensics proficiency: 70%">
+                  <div class="skill-item__fill" style="--fill: 70%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-group fade-in">
+            <h3 class="skill-group__title">
+              <span class="skill-group__icon" aria-hidden="true">⬡</span>
+              Networking &amp; Infrastructure
+            </h3>
+            <ul class="skill-group__list" role="list">
+              <li class="skill-item">
+                <span class="skill-item__name">Network Protocols</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Network Protocols proficiency: 80%">
+                  <div class="skill-item__fill" style="--fill: 80%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item__name">Firewall &amp; Security Management</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Firewall proficiency: 70%">
+                  <div class="skill-item__fill" style="--fill: 70%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item__name">VPNs</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="VPNs proficiency: 65%">
+                  <div class="skill-item__fill" style="--fill: 65%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item__name">MS Windows Administration</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Windows Administration proficiency: 75%">
+                  <div class="skill-item__fill" style="--fill: 75%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-group fade-in">
+            <h3 class="skill-group__title">
+              <span class="skill-group__icon" aria-hidden="true">⬡</span>
+              Scripting &amp; Frameworks
+            </h3>
+            <ul class="skill-group__list" role="list">
+              <li class="skill-item">
+                <span class="skill-item__name">Python</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Python proficiency: 65%">
+                  <div class="skill-item__fill" style="--fill: 65%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item__name">NIST SP 800-53</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="NIST SP 800-53 proficiency: 75%">
+                  <div class="skill-item__fill" style="--fill: 75%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item__name">OSINT</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="OSINT proficiency: 70%">
+                  <div class="skill-item__fill" style="--fill: 70%"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item__name">Phishing Simulation</span>
+                <div class="skill-item__bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Phishing Simulation proficiency: 80%">
+                  <div class="skill-item__fill" style="--fill: 80%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Tool badges -->
+        <div class="skills__badges" aria-label="Tool badges">
+          <span class="skill-badge">Wireshark</span>
+          <span class="skill-badge">Kali Linux</span>
+          <span class="skill-badge">Python</span>
+          <span class="skill-badge">NGREP</span>
+          <span class="skill-badge">SIEM</span>
+          <span class="skill-badge">EDR</span>
+          <span class="skill-badge">NIST 800-53</span>
+          <span class="skill-badge">Phishing Sim</span>
+          <span class="skill-badge">OSINT</span>
+          <span class="skill-badge">Windows</span>
+          <span class="skill-badge">Firewalls</span>
+          <span class="skill-badge">VPNs</span>
+          <span class="skill-badge">Excel</span>
+          <span class="skill-badge">TCP/IP</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BLOG ===================== -->
+    <section class="section blog-preview" id="blog" aria-labelledby="blog-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">06 &mdash; blog</span>
+          <h2 class="section__title" id="blog-heading">Writing</h2>
+        </div>
+
+        <div class="blog__grid">
+
+          <!-- TODO: Ben - replace these placeholder cards with your real blog posts -->
+
+          <article class="blog-card fade-in" aria-labelledby="blog-1">
+            <div class="blog-card__meta">
+              <span class="blog-card__tag">Internship</span>
+              <!-- TODO: Ben - replace with your real post date -->
+              <time class="blog-card__date" datetime="2025-09-01">September 2025</time>
+            </div>
+            <h3 class="blog-card__title" id="blog-1">My First SOC Internship: What I Expected vs. Reality</h3>
+            <p class="blog-card__excerpt">
+              <!-- TODO: Ben - replace with your real post excerpt -->
+              What it's actually like sitting behind a SIEM console on day one, triaging alerts no one warned you about in school.
+            </p>
+            <!-- TODO: Ben - replace # with your real blog post URL -->
+            <a href="blog/index.html" class="blog-card__link" aria-label="Read: My First SOC Internship">
+              Read more
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+
+          <article class="blog-card fade-in" aria-labelledby="blog-2">
+            <div class="blog-card__meta">
+              <span class="blog-card__tag">Certifications</span>
+              <!-- TODO: Ben - replace with your real post date -->
+              <time class="blog-card__date" datetime="2026-01-01">January 2026</time>
+            </div>
+            <h3 class="blog-card__title" id="blog-2">How I Earned the ISC2 CC as a Full-Time Student</h3>
+            <p class="blog-card__excerpt">
+              <!-- TODO: Ben - replace with your real post excerpt -->
+              Study strategy, resources I actually used, and why I think every cybersecurity student should start here.
+            </p>
+            <!-- TODO: Ben - replace # with your real blog post URL -->
+            <a href="blog/index.html" class="blog-card__link" aria-label="Read: How I Earned the ISC2 CC">
+              Read more
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+
+          <article class="blog-card fade-in" aria-labelledby="blog-3">
+            <div class="blog-card__meta">
+              <span class="blog-card__tag">Home Lab</span>
+              <!-- TODO: Ben - replace with your real post date -->
+              <time class="blog-card__date" datetime="2026-02-01">February 2026</time>
+            </div>
+            <h3 class="blog-card__title" id="blog-3">Setting Up a Home Security Lab on a Student Budget</h3>
+            <p class="blog-card__excerpt">
+              <!-- TODO: Ben - replace with your real post excerpt -->
+              You don't need expensive hardware. Here's how I built a functional threat detection lab with VMs, free tools, and a lot of patience.
+            </p>
+            <!-- TODO: Ben - replace # with your real blog post URL -->
+            <a href="blog/index.html" class="blog-card__link" aria-label="Read: Setting Up a Home Security Lab">
+              Read more
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </article>
+
+        </div>
+
+        <div class="blog__cta">
+          <a href="blog/index.html" class="btn btn--outline">View All Posts</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">07 &mdash; contact</span>
+          <h2 class="section__title" id="contact-heading">Let's Connect</h2>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info">
+            <p class="contact__note">
+              I'm actively looking for internship and entry-level SOC / Incident Response opportunities. If you're building a Blue Team, let's talk.
+            </p>
+            <div class="contact__links">
+              <a href="mailto:bdaccione@gmail.com" class="contact__link" aria-label="Email Benjamin Daccione">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                bdaccione@gmail.com
+              </a>
+              <a href="https://github.com/daccio11" class="contact__link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile — opens in new tab">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                github.com/daccio11
+              </a>
+              <a href="https://www.linkedin.com/in/bendaccione/" class="contact__link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile — opens in new tab">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                linkedin.com/in/bendaccione
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact form -->
+          <form class="contact__form" id="contact-form" novalidate aria-label="Contact form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Name</label>
+              <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your name" required autocomplete="name" aria-required="true" />
+            </div>
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email</label>
+              <input type="email" id="contact-email" name="email" class="form-input" placeholder="your@email.com" required autocomplete="email" aria-required="true" />
+            </div>
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" name="message" class="form-input form-textarea" placeholder="Tell me about the opportunity..." required aria-required="true" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
+              <span class="submit-text">Send Message</span>
+              <span class="submit-sending" aria-live="polite" hidden>Sending...</span>
+            </button>
+            <p class="form-note">
+              <!-- TODO: Ben - wire this form up to Formspree, Netlify Forms, or EmailJS for real submissions -->
+              <span class="accent">// </span>Form submissions go directly to bdaccione@gmail.com
+            </p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#hero" class="footer__logo" aria-label="Back to top">
+            <span class="nav__logo-bracket">[</span>BD<span class="nav__logo-bracket">]</span>
+          </a>
+          <p class="footer__tagline">Threat hunter in training. Ready December 2026.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#certifications">Certs</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="blog/index.html">Blog</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="footer-year"></span> Benjamin Daccione. Built with intention.</p>
+        <p class="footer__status">
+          <span class="status-dot status-dot--green" aria-hidden="true"></span>
+          Open to opportunities
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

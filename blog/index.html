@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Blog — Benjamin Daccione | Cybersecurity</title>
+  <meta name="description" content="Benjamin Daccione's cybersecurity blog — SOC internship takeaways, certification guides, and home lab writeups." />
+  <meta property="og:title" content="Blog — Benjamin Daccione" />
+  <meta property="og:description" content="Cybersecurity writing from a Blue Team student — SOC internship takeaways, cert guides, and lab writeups." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a0e17'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-size='18' font-family='monospace' font-weight='bold' fill='%2300d4ff'>BD</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a href="../index.html" class="nav__logo" aria-label="Benjamin Daccione — home">
+        <span class="nav__logo-bracket">[</span>BD<span class="nav__logo-bracket">]</span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <ul class="nav__links" id="nav-links" role="list">
+        <li><a href="../index.html#about" class="nav__link">About</a></li>
+        <li><a href="../index.html#experience" class="nav__link">Experience</a></li>
+        <li><a href="../index.html#certifications" class="nav__link">Certs</a></li>
+        <li><a href="../index.html#projects" class="nav__link">Projects</a></li>
+        <li><a href="../index.html#skills" class="nav__link">Skills</a></li>
+        <li><a href="index.html" class="nav__link" aria-current="page">Blog</a></li>
+        <li><a href="../index.html#contact" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="blog-page-hero" aria-labelledby="blog-page-title">
+      <div class="container">
+        <a href="../index.html" class="blog-page-back" aria-label="Back to portfolio">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 5 5 12 12 19"/></svg>
+          Back to portfolio
+        </a>
+        <span class="section__label">writing &amp; research</span>
+        <h1 class="section__title" id="blog-page-title">Blog</h1>
+        <p style="color:var(--color-muted);font-size:0.9rem;margin-top:0.75rem;font-family:var(--font-mono)">
+          SOC takeaways, cert guides, lab writeups, and field notes from a cybersecurity student.
+        </p>
+      </div>
+    </section>
+
+    <!-- Blog posts -->
+    <div class="container">
+      <div class="blog-page-grid">
+
+        <!-- TODO: Ben - replace these placeholder cards with your real posts -->
+
+        <article class="blog-card fade-in" aria-labelledby="bp-1">
+          <div class="blog-card__meta">
+            <span class="blog-card__tag">Internship</span>
+            <!-- TODO: Ben - update datetime and visible date with real publish date -->
+            <time class="blog-card__date" datetime="2025-09-01">September 2025</time>
+          </div>
+          <h2 class="blog-card__title" id="bp-1">My First SOC Internship: What I Expected vs. Reality</h2>
+          <p class="blog-card__excerpt">
+            <!-- TODO: Ben - replace with your real post content or excerpt -->
+            What it's actually like sitting behind a SIEM console on day one, triaging alerts no one warned you about in school. Spoiler: the training materials don't cover the good stuff.
+          </p>
+          <!-- TODO: Ben - replace # with your real post URL -->
+          <a href="#" class="blog-card__link" aria-label="Read: My First SOC Internship">
+            Coming soon
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </article>
+
+        <article class="blog-card fade-in" aria-labelledby="bp-2">
+          <div class="blog-card__meta">
+            <span class="blog-card__tag">Certifications</span>
+            <time class="blog-card__date" datetime="2026-01-01">January 2026</time>
+          </div>
+          <h2 class="blog-card__title" id="bp-2">How I Earned the ISC2 CC as a Full-Time Student</h2>
+          <p class="blog-card__excerpt">
+            Study strategy, resources I actually used, and why I think every cybersecurity student should start with the CC before chasing Security+.
+          </p>
+          <a href="#" class="blog-card__link" aria-label="Read: How I Earned the ISC2 CC">
+            Coming soon
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </article>
+
+        <article class="blog-card fade-in" aria-labelledby="bp-3">
+          <div class="blog-card__meta">
+            <span class="blog-card__tag">Home Lab</span>
+            <time class="blog-card__date" datetime="2026-02-01">February 2026</time>
+          </div>
+          <h2 class="blog-card__title" id="bp-3">Setting Up a Home Security Lab on a Student Budget</h2>
+          <p class="blog-card__excerpt">
+            You don't need expensive hardware. Here's how I built a functional threat detection lab with VMs, free tools, and a lot of patience — and what I'd do differently now.
+          </p>
+          <a href="#" class="blog-card__link" aria-label="Read: Setting Up a Home Security Lab">
+            Coming soon
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </article>
+
+        <!-- Placeholder empty state card — remove once real posts are added -->
+        <article class="blog-card fade-in" style="border-style:dashed;opacity:0.5" aria-labelledby="bp-placeholder">
+          <div class="blog-card__meta">
+            <span class="blog-card__tag" style="border-style:dashed">Coming Soon</span>
+          </div>
+          <h2 class="blog-card__title" id="bp-placeholder" style="color:var(--color-muted)">
+            More posts in the works&hellip;
+          </h2>
+          <p class="blog-card__excerpt">
+            <!-- TODO: Ben - remove this card once you have more real posts -->
+            Network forensics lab writeups, CTF walkthroughs, and Security+ study notes coming soon.
+          </p>
+        </article>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="../index.html" class="footer__logo" aria-label="Back to portfolio">
+            <span class="nav__logo-bracket">[</span>BD<span class="nav__logo-bracket">]</span>
+          </a>
+          <p class="footer__tagline">Threat hunter in training. Ready December 2026.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#experience">Experience</a>
+          <a href="../index.html#certifications">Certs</a>
+          <a href="../index.html#projects">Projects</a>
+          <a href="../index.html#skills">Skills</a>
+          <a href="index.html" aria-current="page">Blog</a>
+          <a href="../index.html#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="footer-year"></span> Benjamin Daccione. Built with intention.</p>
+        <p class="footer__status">
+          <span class="status-dot status-dot--green" aria-hidden="true"></span>
+          Open to opportunities
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
